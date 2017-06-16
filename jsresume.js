@@ -2,8 +2,7 @@ var name = 'Adrian Thomas';
 var upperCase = name.toUpperCase();
 var career = 'Web Developer';
 var description = "My name is Adrian Thomas. I am from Gardendale, Al, just outside of Birmingham and I worked in retail all of my life.";
-var interests= ['Playing Guitar', 'Playing Video Games', 'Learning to Program'];
-
+var interests = ["Playing Guitar", "Licking Doorbells", "Playing Video Games"];
 function displayPosition (compNames , jobTitle , description ) {
     return '* ' + compNames + ' ' + jobTitle + " - " + description;
 }
@@ -19,13 +18,14 @@ function displaySkills (boolean , skill ) {
 
 }
 
+
 console.log('Name: ' + upperCase);
 console.log('Career: ' + career);
 console.log('Description: ' + description);
 console.log('My Interests: ');
-for (var i = 0; i < interests.length; i++) {
-console.log('*' + interests[i]);
-}
+ for (var i = 0; i < interests.length; i++) {    
+        console.log('* ' + interests[i]);
+        }
 console.log('My Previous Experience:')
 console.log(displayPosition('Piggly Wiggly', 'Stocker', 'Stocked Shelves'));
 console.log(displayPosition('Great American Tent Company', 'Worker', 'Put up tents for events'));
@@ -37,10 +37,6 @@ console.log(displaySkills(21, "Javascript"));
 console.log(displaySkills(false, "Html"));
 
 
-// function displayPosition (jobs) {
-    
-// }
-
 // var jobs = {
 
 //         Company: "Piggly Wiggly",
@@ -50,19 +46,6 @@ console.log(displaySkills(false, "Html"));
 //     }
 
 
-//     {
-//         Company: "Great American Tent Company",
-//         jobTtile: 'Work Hand',
-//         description: 'Put up tents'
-//     },
-
-
-//     {
-//         Company: "Great American Tent Company",
-//         jobTtile: 'Work Hand',
-//         description: 'Put up tents'
-//     }
-// ]
   
 // for (var key in jobs) {
 //   console.log(`jobs.${key} = ${jobs[key]}`);
@@ -73,5 +56,3 @@ console.log(displaySkills(false, "Html"));
 //         return arr[i];
 //     }
 // }
-
-// console.log(jobs("Piggly Wiggly", "Stocker", "Stocked shelves"));
